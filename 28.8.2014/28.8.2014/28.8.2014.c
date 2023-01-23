@@ -24,20 +24,16 @@ int AverageGrade(Position math, Position bio, Position physics, Position average
 
 int main()
 {
-	Position math = NULL;
+	Position math = NULL, bio = NULL, physics = NULL, passedAll = NULL, average = NULL;
 	math = InicializeList(math);
-
-	Position bio = NULL;
 	bio = InicializeList(bio);
-
-	Position physics = NULL;
 	physics = InicializeList(physics);
-
-	Position passedAll = NULL;
 	passedAll = InicializeList(passedAll);
-
-	Position average = NULL;
 	average = InicializeList(average);
+	
+	ReadFromFile("math.txt", math);
+	ReadFromFile("bio.txt", bio);
+	ReadFromFile("physics.txt", physics);
 
 	int choice = 0;
 
@@ -48,17 +44,14 @@ int main()
 		{
 		case 1:
 			printf("\nMath\n----------------------------------\n");
-			ReadFromFile("math.txt", math);
 			PrintList(math->next);
 			break;
 		case 2:
 			printf("\nBio\n----------------------------------\n");
-			ReadFromFile("bio.txt", bio);
 			PrintList(bio->next);
 			break;
 		case 3:
 			printf("\nPhysics\n----------------------------------\n");
-			ReadFromFile("physics.txt", physics);
 			PrintList(physics->next);
 			break;
 		case 4:
