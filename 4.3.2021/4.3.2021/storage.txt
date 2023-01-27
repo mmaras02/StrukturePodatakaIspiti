@@ -1,0 +1,11 @@
+pice sprite 6
+pice kola 10
+voce jagoda 7
+kruh francuz 5
+grickalice pringles 15
+kruh kukuruzni 2
+pice senzacija 20
+grickalice kikiriki 13
+voce babana 4
+pice sprite 10
+voce jabuka 36
